@@ -81,7 +81,7 @@ app.get("/api/v1/users/:id", (req, res) => {
 		// console.log(user);
 
 		if (!!user) {
-			res.status(200).send({
+			res.status(201).send({
 				status: "success",
 				data: {
 					user,
